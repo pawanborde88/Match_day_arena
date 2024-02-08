@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@600;700;800&family=Roboto:wght@500;700;900&display=swap');
+
 .my-container {
   background: url(../../../assets/Background.png);
   background-size: cover;
@@ -6,15 +8,50 @@
   padding-top: 0rem;
   padding-bottom: 40px;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   padding: 10px 10px;
   align-items: center;
 }
+
 nav li {
   display: inline-block;
   list-style: none;
   padding: 0px 20px;
 
 }
+
+.carousel-item img:hover {
+  transform: translateY(-10px);
+  animation: bounce 0.5s infinite;
+
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.amenities img:hover {
+  transform: translateY(-10px);
+  animation: bounce 0.5s infinite;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 70px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: -2.5px;
+  font-family: 'Roboto', sans-serif;
+}
+
