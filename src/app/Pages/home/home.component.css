@@ -1,0 +1,20 @@
+.my-container {
+  background: url(../../../assets/Background.png);
+  background-size: cover;
+  min-height: 40rem;
+  background-repeat: no-repeat;
+  padding-top: 0rem;
+  padding-bottom: 40px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  align-items: center;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+
+}
