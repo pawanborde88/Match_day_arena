@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@600;700;800&family=Roboto:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 .my-container {
   background: url(../../../assets/Background.png);
@@ -54,4 +54,11 @@ h2 {
   letter-spacing: -2.5px;
   font-family: 'Roboto', sans-serif;
 }
-
+p{
+  margin-top: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
