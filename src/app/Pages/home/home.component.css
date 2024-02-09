@@ -137,3 +137,7 @@ p {
   transition: all 1s ease;
   z-index: 999;
 }
+.card-text{
+  text-align: justify;
+  text-justify: inter-word;
+}
