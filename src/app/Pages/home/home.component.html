@@ -1,58 +1,6 @@
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid ">
-    <a class="navbar-brand" href="#">
-      <img src="./assets/WhatsApp_Image_2024-01-31_at_10.31 1.png" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav  mx-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gallary</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Booking</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <button type="button" class="btn btn-danger py-2 m-2 m-1 btn-sm rounded-5">Subscription</button>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <button class="button"><span>Book Now </span></button>
-      </form>
-    </div>
-  </div>
-</nav>
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="1500">
-      <img src="../../../assets/Background.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="1500">
-      <img src="../../../assets/pexels-leonardo-hidalgo-12609558.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="1500">
-      <img src="../../../assets/pexels-omar-ramadan-9535728.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-<!-- <div class="my-container ">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid ">
+ <header  >
+  <nav class="navbar navbar-expand-lg fixed-top" >
+    <div class="container-fluid " (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
       <a class="navbar-brand" href="#">
         <img src="./assets/WhatsApp_Image_2024-01-31_at_10.31 1.png" alt="">
       </a>
@@ -90,20 +38,34 @@
       </div>
     </div>
   </nav>
-</div> -->
+</header>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1500">
+      <img src="../../../assets/Background.png" class="img-fluid d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="1500">
+      <img src="../../../assets/pexels-leonardo-hidalgo-12609558.jpg" class="img-fluid d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="1500">
+      <img src="../../../assets/pexels-omar-ramadan-9535728.jpg" class="img-fluid d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+<!-- About US -->
 <section>
-  <div class="container-fluid bg-body-secondary p-2 px-3 mb-5">
+  <div class="container-fluid bg-body-secondary p-2 px-3 ">
     <div class="d-flex justify-content-center mt-4">
       <h2>About Us </h2>
     </div>
-    <div class="row mt-4 mb-5">
+    <div class="row mt-4">
       <div class="col-sm-12 col-lg-6 col-xl-6 col-xxl-6 col-md-6">
         <div class="about-img">
           <img class="img-fluid mt-4 d-block mx-auto" height="100" width="400" src="../../../assets/image-7.png" alt="">
         </div>
       </div>
       <div class="col-sm-12 col-lg-5 col-xl-5 col-xxl-5 col-md-5">
-        <p class="p-2 py-2 m-2 lh-base">
+        <p class="p-2 m-2 lh-base">
           <strong>VISION</strong>: We aim to be the leading Sports Infrastructure and Education company in
           India, empowering
           India to become a sporting powerhouse. <br>
@@ -126,11 +88,12 @@
     </div>
   </div>
 </section>
-<div class="container  mt-5">
+<!--Sports -->
+<div class="container-fluid bg-body-secondary">
   <div class="d-flex justify-content-center">
     <h2>Sports</h2>
   </div>
-  <div class="row">
+  <div class="row py-3">
     <div class="col-md-4">
       <img class="img-fluid d-block mx-auto" src="../../../assets/Handball.png" height="700" width="280" alt="...">
     </div>
@@ -142,23 +105,20 @@
       <img class="img-fluid d-block mx-auto" src="../../../assets/Group 467.png" height="700" width="280" alt="...">
     </div>
   </div>
-  <div class="row mt-5">
+  <div class="row mt-5 pb-5  ">
     <div class="col-6">
-      <img class="img-fluid d-block mx-auto" src="../../../assets/Calisthenics.png" height="550" width="280"
-      alt="...">
+      <img class="img-fluid d-block mx-auto" src="../../../assets/Calisthenics.png" height="550" width="280" alt="...">
     </div>
     <div class="col-6">
-      <img class="img-fluid d-block mx-auto" src="../../../assets/BAdminton.png" height="550" width="280"
-      alt="...">
+      <img class="img-fluid d-block mx-auto" src="../../../assets/BAdminton.png" height="550" width="280" alt="...">
     </div>
   </div>
 </div>
-<div class="container mt-5">
+<!-- Events section-->
+<div class="container-fluid bg-body-secondary">
   <div class="d-flex justify-content-center">
-    <h2>Events</h2>
+    <h2 class=" mt-4">Events</h2>
   </div>
-</div>
-<div class="container-fluid mt-5">
   <div class="row">
     <div id="carouselExample1" class="carousel slide">
       <div class="carousel-inner">
@@ -175,7 +135,7 @@
           </div>
         </div>
         <div class="carousel-item ">
-          <div class="row p-2 mb-4">
+          <div class="row">
             <div class="col-6">
               <img height="700" width="400" class="img-fluid d-block mx-auto" src="../../../assets/yoga.png" alt="...">
 
@@ -197,11 +157,12 @@
     </div>
   </div>
 </div>
-<div class="container mt-3 p-2 px-3 mb-5">
+<!-- Amenities -->
+<div class="container-fluid bg-body-secondary pb-3 p-5  px-4 mb-5">
   <div class="d-flex justify-content-center">
     <h2>Amenities</h2>
   </div>
-  <div class="row d-flex justify-content-between amenities mb-5">
+  <div class="row d-flex justify-content-center amenities mb-5">
     <div class="col-sm-6 col-lg-2 col-xl-2 col-xxl-2 col-md-2 ">
       <img class="img-fluid d-block mx-auto" height="220" width="150" src="../../../assets/Drinking-water.png" alt="">
     </div>
@@ -219,6 +180,7 @@
     </div>
   </div>
 </div>
+<!-- Comments -->
 <section>
   <div class="container">
     <div class="row d-flex justify-content-center">
@@ -272,6 +234,7 @@
     </div>
   </div>
 </section>
+<!-- Cards -->
 <div class="container">
   <div class="row">
     <div class="col-6">
@@ -288,6 +251,7 @@
     </div>
   </div>
 </div>
+<!-- Collaborations -->
 <div class="container-fluid bg-body-secondary mt-5 pb-2 pt-3">
   <div class="d-flex justify-content-center">
     <h2 class="mt-3">Collaborations </h2>
@@ -323,6 +287,7 @@
     </div>
   </div>
 </div>
+  <!-- Book Slots -->
 <div class="container-fluid bg-body-secondary">
   <div class="row">
     <div class="col-sm-12 col-lg-12 col-xl-12 col-xxl-12 col-md-12">
@@ -336,11 +301,12 @@
   </div>
 
 </div>
-<div class="container-fluid bg-body-secondary mb-5 pb-4">
+<!-- Partners -->
+<div class="container-fluid bg-body-secondary ">
   <div class="d-flex justify-content-center">
     <h2 class="mt-3 pb-3">Partners </h2>
   </div>
-  <div class="row partners d-flex justify-content-between">
+  <div class="row pb-5 partners d-flex justify-content-between">
     <div class="col-2">
       <img src="../../../assets/knvb-logo-min.png" class="img-fluid d-block mx-auto" height="220" alt="">
     </div>
@@ -361,6 +327,7 @@
     </div>
   </div>
 </div>
+<!-- Footer -->
 <footer>
   <div class="container">
     <div class="row d-flex justify-content-start">

@@ -1,16 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+header{
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.fixed {
+  background: #a8ff78;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  width: 100%;
+  transition: 0.8s linear;
+  top: 0px;
 
-.my-container {
-  background: url(../../../assets/Background.png);
-  background-size: cover;
-  min-height: 40rem;
-  background-repeat: no-repeat;
-  padding-top: 0rem;
-  padding-bottom: 40px;
 }
 
+.nofixed {
+
+  position: static;
+  transition: 0.8s linear;
+  top: -50px;
+
+}
+header nav{
+display: flex;
+justify-content: space-between;
+background: no-repeat center center scroll;
+background-size: cover;
+align-items: center;
+}
 ul li a {
-  color: white;
+  color:black;
   text-align: justify;
   font-weight: 500;
   position: relative;
